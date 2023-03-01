@@ -1,7 +1,7 @@
 # Installation
 ## GaIn
 * Get GaIn from TODO.
-* Build it as a shared library. On linux:
+* Build it as a shared library. On Linux:
 ```
 ./configure FCFLAGS="-O2 -g -fPIC" CPPFLAGS="-O2 -g -fPIC"
 make
@@ -12,7 +12,7 @@ gfortran -shared -o lib.so *.o */*.o -lmpfr -lmpc
 
 ## Julia
 * Get Julia (this was tested with julia 1.8, and should work with any later 1.x version)
-* Install this package as a development package: `] dev https://github.com/antoine-levitt/PhotoionizationGTO.jl` in Julia
+* Install this package as a development package: `] dev https://github.com/antoine-levitt/PhotoionizationGTO.jl` in Julia. This installs it in `~/.julia/dev/PhotoionizationGTO` (on Linux)
 * Set path to GaIn in GaIn.jl
 
 ## Python and PySCF
