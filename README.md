@@ -16,8 +16,8 @@ gfortran -shared -o lib.so *.o */*.o -lmpfr -lmpc
 * Set path to GaIn in GaIn.jl
 
 ## Python and PySCF
-* In Julia, do `] add PyCall`, `using PyCall`, and run `PyCall.python` to figure out what Python is used by Julia
-* Based on that, use the appropriate Python magic (pip, conda, whatever) to install pyscf
+* In Julia, do `] add PyCall`, `using PyCall`, and run `PyCall.python` to figure out which of the 300 Python interpreters on your system is actually used by Julia
+* Based on that, use the appropriate Python magic (pip3, conda, whatever) to install pyscf. This was tested with pyscf 2.1.1.
 
 # Usage
 * Activate project: `] activate ~/.julia/dev/PhotoionizationGTO`; this makes the dependencies available for `using`.
