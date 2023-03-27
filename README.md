@@ -1,9 +1,9 @@
 # Installation
 ## GaIn
-* Get GaIn from TODO.
-* Build it as a shared library. On Linux:
+* Get GaIn from https://gitlab.maisondelasimulation.fr/beDeft/GaIn/-/releases/v1.1.
+* Build it as a shared library with yukawa support. On Linux:
 ```
-./configure FCFLAGS="-O2 -g -fPIC" CPPFLAGS="-O2 -g -fPIC"
+./configure --enable-yukawa=true FCFLAGS="-O2 -g -fPIC" CPPFLAGS="-O2 -g -fPIC"
 make
 cd src
 gfortran -shared -o lib.so *.o */*.o -lmpfr -lmpc
